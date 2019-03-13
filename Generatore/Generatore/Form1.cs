@@ -32,7 +32,7 @@ namespace Generatore
 
             Random rnd = new Random();
             Random potenza = new Random();
-            var potenzaTre = potenza.Next(0,2);
+            var potenzaTre = potenza.Next(0,3);
             label1.Text = Convert.ToString(potenzaTre);
 
             lbl_nUno.Text = Convert.ToString(rnd.Next(1, 99));

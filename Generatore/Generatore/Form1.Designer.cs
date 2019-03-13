@@ -46,6 +46,8 @@
             this.lbl_potenzaNUno = new System.Windows.Forms.Label();
             this.lbl_potenzaNDue = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.pannelloDenominatore.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -64,7 +66,7 @@
             // 
             this.lbl_lineaFrazione.AutoSize = true;
             this.lbl_lineaFrazione.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_lineaFrazione.Location = new System.Drawing.Point(8, 1);
+            this.lbl_lineaFrazione.Location = new System.Drawing.Point(3, 1);
             this.lbl_lineaFrazione.Name = "lbl_lineaFrazione";
             this.lbl_lineaFrazione.Size = new System.Drawing.Size(257, 31);
             this.lbl_lineaFrazione.TabIndex = 2;
@@ -74,7 +76,7 @@
             // 
             this.lbl_dUno.AutoSize = true;
             this.lbl_dUno.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_dUno.Location = new System.Drawing.Point(8, 32);
+            this.lbl_dUno.Location = new System.Drawing.Point(8, 43);
             this.lbl_dUno.Name = "lbl_dUno";
             this.lbl_dUno.Size = new System.Drawing.Size(44, 31);
             this.lbl_dUno.TabIndex = 3;
@@ -124,7 +126,7 @@
             // 
             this.lbl_simboloTre.AutoSize = true;
             this.lbl_simboloTre.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_simboloTre.Location = new System.Drawing.Point(58, 32);
+            this.lbl_simboloTre.Location = new System.Drawing.Point(58, 43);
             this.lbl_simboloTre.Name = "lbl_simboloTre";
             this.lbl_simboloTre.Size = new System.Drawing.Size(27, 31);
             this.lbl_simboloTre.TabIndex = 8;
@@ -134,7 +136,7 @@
             // 
             this.lbl_dDue.AutoSize = true;
             this.lbl_dDue.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_dDue.Location = new System.Drawing.Point(91, 32);
+            this.lbl_dDue.Location = new System.Drawing.Point(91, 43);
             this.lbl_dDue.Name = "lbl_dDue";
             this.lbl_dDue.Size = new System.Drawing.Size(44, 31);
             this.lbl_dDue.TabIndex = 9;
@@ -144,7 +146,7 @@
             // 
             this.lbl_simboloQuattro.AutoSize = true;
             this.lbl_simboloQuattro.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_simboloQuattro.Location = new System.Drawing.Point(141, 32);
+            this.lbl_simboloQuattro.Location = new System.Drawing.Point(141, 43);
             this.lbl_simboloQuattro.Name = "lbl_simboloQuattro";
             this.lbl_simboloQuattro.Size = new System.Drawing.Size(27, 31);
             this.lbl_simboloQuattro.TabIndex = 10;
@@ -154,7 +156,7 @@
             // 
             this.lbl_dTre.AutoSize = true;
             this.lbl_dTre.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_dTre.Location = new System.Drawing.Point(174, 32);
+            this.lbl_dTre.Location = new System.Drawing.Point(167, 43);
             this.lbl_dTre.Name = "lbl_dTre";
             this.lbl_dTre.Size = new System.Drawing.Size(44, 31);
             this.lbl_dTre.TabIndex = 11;
@@ -172,6 +174,8 @@
             // 
             // pannelloDenominatore
             // 
+            this.pannelloDenominatore.Controls.Add(this.label3);
+            this.pannelloDenominatore.Controls.Add(this.label2);
             this.pannelloDenominatore.Controls.Add(this.lbl_dUno);
             this.pannelloDenominatore.Controls.Add(this.lbl_simboloTre);
             this.pannelloDenominatore.Controls.Add(this.lbl_dTre);
@@ -195,6 +199,8 @@
             // checkFrazione
             // 
             this.checkFrazione.AutoSize = true;
+            this.checkFrazione.Checked = true;
+            this.checkFrazione.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkFrazione.Location = new System.Drawing.Point(3, 3);
             this.checkFrazione.Name = "checkFrazione";
             this.checkFrazione.Size = new System.Drawing.Size(85, 17);
@@ -207,7 +213,7 @@
             // 
             this.lbl_potenzaNUno.AutoSize = true;
             this.lbl_potenzaNUno.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_potenzaNUno.Location = new System.Drawing.Point(45, 35);
+            this.lbl_potenzaNUno.Location = new System.Drawing.Point(77, 35);
             this.lbl_potenzaNUno.Name = "lbl_potenzaNUno";
             this.lbl_potenzaNUno.Size = new System.Drawing.Size(20, 24);
             this.lbl_potenzaNUno.TabIndex = 15;
@@ -217,7 +223,7 @@
             // 
             this.lbl_potenzaNDue.AutoSize = true;
             this.lbl_potenzaNDue.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_potenzaNDue.Location = new System.Drawing.Point(127, 35);
+            this.lbl_potenzaNDue.Location = new System.Drawing.Point(160, 35);
             this.lbl_potenzaNDue.Name = "lbl_potenzaNDue";
             this.lbl_potenzaNDue.Size = new System.Drawing.Size(20, 24);
             this.lbl_potenzaNDue.TabIndex = 16;
@@ -231,6 +237,26 @@
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 17;
             this.label1.Text = "label1";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(42, 32);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(20, 24);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "x";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(205, 32);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(20, 24);
+            this.label3.TabIndex = 18;
+            this.label3.Text = "x";
             // 
             // Form1
             // 
@@ -277,6 +303,8 @@
         private System.Windows.Forms.Label lbl_potenzaNUno;
         private System.Windows.Forms.Label lbl_potenzaNDue;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
     }
 }
 
