@@ -38,12 +38,12 @@ namespace Generatore
             label3.Text = Convert.ToString(potenzaDenominatore);
             label4.Text = Convert.ToString(definito);
 
-            lbl_nUno.Text = Convert.ToString(rnd.Next(1, 99));
-            lbl_nDue.Text = Convert.ToString(rnd.Next(1, 99));
-            lbl_nTre.Text = Convert.ToString(rnd.Next(1, 99));
-            lbl_dUno.Text = Convert.ToString(rnd.Next(1, 99));
-            lbl_dDue.Text = Convert.ToString(rnd.Next(1, 99));
-            lbl_dTre.Text = Convert.ToString(rnd.Next(1, 99));
+            lbl_nUno.Text = Convert.ToString(rnd.Next(1, 12));
+            lbl_nDue.Text = Convert.ToString(rnd.Next(1, 12));
+            lbl_nTre.Text = Convert.ToString(rnd.Next(1, 12));
+            lbl_dUno.Text = Convert.ToString(rnd.Next(1, 12));
+            lbl_dDue.Text = Convert.ToString(rnd.Next(1, 12));
+            lbl_dTre.Text = Convert.ToString(rnd.Next(1, 12));
 
             switch (potenzaTre) {
 
