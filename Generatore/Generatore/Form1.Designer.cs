@@ -30,6 +30,7 @@ namespace Generatore
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lbl_nUno = new System.Windows.Forms.Label();
             this.lbl_lineaFrazione = new System.Windows.Forms.Label();
             this.lbl_dUno = new System.Windows.Forms.Label();
@@ -43,6 +44,8 @@ namespace Generatore
             this.lbl_dTre = new System.Windows.Forms.Label();
             this.btn_Genera = new System.Windows.Forms.Button();
             this.pannelloDenominatore = new System.Windows.Forms.Panel();
+            this.lbl_calcoloQuattro = new System.Windows.Forms.Label();
+            this.lbl_calcoloTre = new System.Windows.Forms.Label();
             this.lbl_potenzaQuattro = new System.Windows.Forms.Label();
             this.lbl_potenzaTre = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -52,13 +55,15 @@ namespace Generatore
             this.lbl_potenzaNDue = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.areaCalcolo = new System.Windows.Forms.Panel();
+            this.lbl_calcoloUno = new System.Windows.Forms.Label();
+            this.lbl_calcoloDue = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbl_definitoUno = new System.Windows.Forms.Label();
             this.lbl_definitoDue = new System.Windows.Forms.Label();
-            this.lbl_calcoloUno = new System.Windows.Forms.Label();
-            this.lbl_calcoloDue = new System.Windows.Forms.Label();
-            this.lbl_calcoloTre = new System.Windows.Forms.Label();
-            this.lbl_calcoloQuattro = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.pannelloDenominatore.SuspendLayout();
             this.panel1.SuspendLayout();
             this.areaCalcolo.SuspendLayout();
@@ -202,6 +207,26 @@ namespace Generatore
             this.pannelloDenominatore.Size = new System.Drawing.Size(294, 94);
             this.pannelloDenominatore.TabIndex = 13;
             // 
+            // lbl_calcoloQuattro
+            // 
+            this.lbl_calcoloQuattro.AutoSize = true;
+            this.lbl_calcoloQuattro.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_calcoloQuattro.Location = new System.Drawing.Point(193, 43);
+            this.lbl_calcoloQuattro.Name = "lbl_calcoloQuattro";
+            this.lbl_calcoloQuattro.Size = new System.Drawing.Size(30, 31);
+            this.lbl_calcoloQuattro.TabIndex = 22;
+            this.lbl_calcoloQuattro.Text = "+";
+            // 
+            // lbl_calcoloTre
+            // 
+            this.lbl_calcoloTre.AutoSize = true;
+            this.lbl_calcoloTre.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_calcoloTre.Location = new System.Drawing.Point(76, 43);
+            this.lbl_calcoloTre.Name = "lbl_calcoloTre";
+            this.lbl_calcoloTre.Size = new System.Drawing.Size(30, 31);
+            this.lbl_calcoloTre.TabIndex = 22;
+            this.lbl_calcoloTre.Text = "+";
+            // 
             // lbl_potenzaQuattro
             // 
             this.lbl_potenzaQuattro.AutoSize = true;
@@ -305,6 +330,26 @@ namespace Generatore
             this.areaCalcolo.Size = new System.Drawing.Size(348, 170);
             this.areaCalcolo.TabIndex = 19;
             // 
+            // lbl_calcoloUno
+            // 
+            this.lbl_calcoloUno.AutoSize = true;
+            this.lbl_calcoloUno.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_calcoloUno.Location = new System.Drawing.Point(79, 28);
+            this.lbl_calcoloUno.Name = "lbl_calcoloUno";
+            this.lbl_calcoloUno.Size = new System.Drawing.Size(30, 31);
+            this.lbl_calcoloUno.TabIndex = 21;
+            this.lbl_calcoloUno.Text = "+";
+            // 
+            // lbl_calcoloDue
+            // 
+            this.lbl_calcoloDue.AutoSize = true;
+            this.lbl_calcoloDue.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_calcoloDue.Location = new System.Drawing.Point(196, 28);
+            this.lbl_calcoloDue.Name = "lbl_calcoloDue";
+            this.lbl_calcoloDue.Size = new System.Drawing.Size(30, 31);
+            this.lbl_calcoloDue.TabIndex = 19;
+            this.lbl_calcoloDue.Text = "+";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Generatore.Properties.Resources._220px_Integral_Uprightness_svg;
@@ -334,51 +379,46 @@ namespace Generatore
             this.lbl_definitoDue.TabIndex = 21;
             this.lbl_definitoDue.Text = "x";
             // 
-            // lbl_calcoloUno
+            // timer1
             // 
-            this.lbl_calcoloUno.AutoSize = true;
-            this.lbl_calcoloUno.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_calcoloUno.Location = new System.Drawing.Point(79, 28);
-            this.lbl_calcoloUno.Name = "lbl_calcoloUno";
-            this.lbl_calcoloUno.Size = new System.Drawing.Size(30, 31);
-            this.lbl_calcoloUno.TabIndex = 21;
-            this.lbl_calcoloUno.Text = "+";
+            this.timer1.Interval = 501;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // lbl_calcoloDue
+            // label1
             // 
-            this.lbl_calcoloDue.AutoSize = true;
-            this.lbl_calcoloDue.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_calcoloDue.Location = new System.Drawing.Point(196, 28);
-            this.lbl_calcoloDue.Name = "lbl_calcoloDue";
-            this.lbl_calcoloDue.Size = new System.Drawing.Size(30, 31);
-            this.lbl_calcoloDue.TabIndex = 19;
-            this.lbl_calcoloDue.Text = "+";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 256);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "label1";
             // 
-            // lbl_calcoloTre
+            // label3
             // 
-            this.lbl_calcoloTre.AutoSize = true;
-            this.lbl_calcoloTre.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_calcoloTre.Location = new System.Drawing.Point(76, 43);
-            this.lbl_calcoloTre.Name = "lbl_calcoloTre";
-            this.lbl_calcoloTre.Size = new System.Drawing.Size(30, 31);
-            this.lbl_calcoloTre.TabIndex = 22;
-            this.lbl_calcoloTre.Text = "+";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(12, 286);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.TabIndex = 23;
+            this.label3.Text = "label3";
             // 
-            // lbl_calcoloQuattro
+            // label4
             // 
-            this.lbl_calcoloQuattro.AutoSize = true;
-            this.lbl_calcoloQuattro.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_calcoloQuattro.Location = new System.Drawing.Point(193, 43);
-            this.lbl_calcoloQuattro.Name = "lbl_calcoloQuattro";
-            this.lbl_calcoloQuattro.Size = new System.Drawing.Size(30, 31);
-            this.lbl_calcoloQuattro.TabIndex = 22;
-            this.lbl_calcoloQuattro.Text = "+";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(12, 320);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.TabIndex = 24;
+            this.label4.Text = "label4";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(730, 415);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lbl_definitoDue);
             this.Controls.Add(this.lbl_definitoUno);
             this.Controls.Add(this.pictureBox1);
@@ -433,6 +473,10 @@ namespace Generatore
         private System.Windows.Forms.Label lbl_calcoloTre;
         private System.Windows.Forms.Label lbl_calcoloUno;
         private System.Windows.Forms.Label lbl_calcoloDue;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
 

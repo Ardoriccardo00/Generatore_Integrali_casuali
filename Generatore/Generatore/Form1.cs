@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -19,19 +20,23 @@ namespace Generatore
 
         private void btn_Genera_Click(object sender, EventArgs e)
         {
-            if (checkFrazione.Checked == true){ lbl_lineaFrazione.Visible = true; pannelloDenominatore.Visible = true; }
+            if (checkFrazione.Checked == true) { lbl_lineaFrazione.Visible = true; pannelloDenominatore.Visible = true; } 
+
             else { lbl_lineaFrazione.Visible = false; pannelloDenominatore.Visible = false; }
 
             if (checkDefiniti.Checked == true) { lbl_definitoUno.Visible = true; lbl_definitoDue.Visible = true; }
             else { lbl_definitoUno.Visible = false; lbl_definitoDue.Visible = false; }
 
             Random rnd = new Random();
-            Random potenza = new Random();
-            Random den = new Random();
-            Random def = new Random();
-            int potenzaTre = potenza.Next(0,3);
-            int potenzaDenominatore = den.Next(0, 3);
-            int definito = def.Next(0, 3);
+         
+            int potenzaTre = rnd.Next(0,3);
+            int potenzaDenominatore = rnd.Next(0, 3);
+            int definito = rnd.Next(0, 3);
+            
+
+            label1.Text = Convert.ToString(potenzaTre);
+            label3.Text = Convert.ToString(potenzaDenominatore);
+            label4.Text = Convert.ToString(definito);
 
             lbl_nUno.Text = Convert.ToString(rnd.Next(1, 99));
             lbl_nDue.Text = Convert.ToString(rnd.Next(1, 99));
@@ -93,6 +98,10 @@ namespace Generatore
 
         }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+        }
     }
 
  }
